@@ -5,7 +5,7 @@ const  gulp = require('gulp'),
        sourcemaps = require('gulp-sourcemaps'),
        notify = require("gulp-notify");
 
-gulp.task('QR-code-css', function () {
+gulp.task('Intro-page', function () {
     return gulp.src('project/sass/style.scss')
         .pipe(sourcemaps.init())
         .pipe(sass())
@@ -18,6 +18,6 @@ gulp.task('QR-code-css', function () {
 
 //watch task
 gulp.task('watch', function () {
-    gulp.watch('project/sass/**/*.scss', gulp.series('QR-code-css'));
+    gulp.watch('project/sass/**/*.scss', gulp.series('Intro-page'));
 })
 gulp.task('default', gulp.parallel('watch'));
