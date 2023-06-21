@@ -1,0 +1,39 @@
+@import "../abstracts";
+
+.navbar {
+  padding: 16px 0;
+
+  .navbar-nav {
+
+    .nav-item {
+
+      .nav-link {
+        font-size: 14px;
+        margin-inline-end: 32px;
+        font-weight: 700;
+
+        &:last-child {
+          //margin: unset;
+        }
+
+        &:hover {
+          color: $almost-black;
+        }
+      }
+
+      .btn-mentor-white {
+        padding: 10px 20px;
+      }
+
+      &:hover {
+        color: unset;
+      }
+    }
+
+    .show-menu {
+      display: flex;
+      opacity: 1;
+      transition: opacity 0.5s ease
+    }
+  }
+}

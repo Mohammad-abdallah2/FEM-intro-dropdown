@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue" rel="stylesheet">
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link rel="stylesheet" href="dist/assets/style/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="dist/assets/js/jquery.min.js "></script>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <nav class="navbar navbar-expand-lg navbar-light d-flex align-items-md-center">
+            <a href="#" class="header-logo"><img src="images/logo.svg" alt="logo of website" width="80px" height="auto"></a>
+
+            <button class="navbar-toggler" type="button">
+                <img src="images/icon-menu.svg" alt="open menu">
+            </button>
+
+            <div class="offcanvas offcanvas-end">
+                <div class="offcanvas-header justify-content-end">
+                    <button type="button" class="navbar-toggler">
+                        <img src="images/icon-close-menu.svg" alt="close menu">
+                    </button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="collapse navbar-collapse show">
+                        <ul class="navbar-nav d-flex gap-2">
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link d-flex flex-direction-row align-items-center gap-2" id="navbarDropdownMobileFeatures" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Features
+                                    <i class="fa-solid fa-angle-down fa-xs"></i>
+                                </a>
+
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMobileFeatures">
+                                    <li>
+                                        <a href="#" class="dropdown-item d-flex gap-3">
+                                            <img src="images/icon-todo.svg" alt="Toto list icon" width="17px" height="17px">
+                                            Todo List
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="dropdown-item d-flex gap-3">
+                                            <img src="images/icon-calendar.svg" alt="Toto list icon" width="17px" height="17px">
+                                            Calendar
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="dropdown-item d-flex gap-3">
+                                            <img src="images/icon-reminders.svg" alt="Toto list icon" width="17px" height="17px">
+                                            Reminders
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="dropdown-item d-flex gap-3">
+                                            <img src="images/icon-planning.svg" alt="Toto list icon" width="17px" height="17px">
+                                            Planning
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link d-flex flex-direction-row align-items-center gap-2" id="navbarDropdownMobileCompany" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Company
+                                    <i class="fa-solid fa-angle-down fa-xs"></i>
+                                </a>
+
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMobileCompany">
+                                    <li>
+                                        <a href="#" class="dropdown-item d-flex">History</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="dropdown-item d-flex">Our team</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="dropdown-item d-flex">Blog</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Careers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">About</a>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav btns">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link nav-menu pe-0">Login</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link nav-menu btn-mentor btn-mentor-white d-flex align-items-center">Register</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="collapse navbar-collapse justify-content-md-between">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link d-flex flex-direction-row align-items-center gap-2" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Features
+                            <div class="rotate"></div>
+                        </a>
+
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a href="#" class="dropdown-item d-flex gap-3">
+                                    <img src="images/icon-todo.svg" alt="Toto list icon" width="17px" height="17px">
+                                    Todo List
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="dropdown-item d-flex gap-3">
+                                    <img src="images/icon-calendar.svg" alt="Toto list icon" width="17px" height="17px">
+                                    Calendar
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="dropdown-item d-flex gap-3">
+                                    <img src="images/icon-reminders.svg" alt="Toto list icon" width="17px" height="17px">
+                                    Reminders
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="dropdown-item d-flex gap-3">
+                                    <img src="images/icon-planning.svg" alt="Toto list icon" width="17px" height="17px">
+                                    Planning
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link d-flex flex-direction-row align-items-center gap-2" id="navbarDropdownCompany" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Company
+                            <div class="rotate"></div>
+                        </a>
+
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownCompany">
+                            <li>
+                                <a href="#" class="dropdown-item">History</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="dropdown-item">Our team</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="dropdown-item">Blog</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav">
+                    <li class="nav-item d-flex align-items-center">
+                        <a href="#" class="nav-link">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link btn-mentor btn-mentor-white d-flex align-items-center">Register</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="modal-backdrop fade"></div>
+        </nav>
+    </div>
+
+    <main>
+        <div class="row flex-column-reverse mt-50 flex-md-row">
+            <div class="col-12 col-md-6 d-flex flex-column justify-content-between align-items-center align-items-md-start">
+                <h2 class="main-title d-flex justify-content-center flex-md-column">
+                    <span>Make</span> remote work
+                </h2>
+
+                <p class="main-desc d-flex justify-content-center">
+                    Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch
+                    productivity soar.
+                </p>
+
+                <div class="d-flex justify-content-center justify-content-md-start">
+                    <a href="#" class="btn-mentor btn-mentor-black">Learn more</a>
+                </div>
+
+                <div class="icons d-flex flex-wrap">
+                    <li>
+                        <img src="images/client-databiz.svg" class="size-image" alt="Client databiz icon">
+                    </li>
+
+                    <li>
+                        <img src="images/client-audiophile.svg" class="size-image" alt="Client databiz icon">
+                    </li>
+
+                    <li>
+                        <img src="images/client-meet.svg" class="size-image" alt="Client databiz icon">
+                    </li>
+
+                    <li>
+                        <img src="images/client-maker.svg" class="size-image" alt="Client databiz icon">
+                    </li>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 d-flex justify-content-center">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="images/image-hero-mobile.webp">
+
+                    <img src="images/image-hero-desktop.webp" alt="Product mobile image" class="product-img">
+                </picture>
+            </div>
+        </div>
+    </main>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="dist/assets/js/main.js"></script>
+</body>
+</html>

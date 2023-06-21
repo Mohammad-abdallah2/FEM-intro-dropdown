@@ -1,0 +1,35 @@
+@import "../abstracts";
+
+.btn-mentor {
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 13px;
+
+  &-white {
+    display: flex;
+    font-size: 14px;
+    border: 2px solid $medium-gray;
+    padding: 10px 20px;
+
+    &:hover {
+      border: 2px solid $almost-black;
+      transition: all 0.5s ease;
+    }
+  }
+
+  &-black {
+    display: flex;
+    font-size: 17px;
+    padding: 17px 27px;
+    background: $almost-black;
+    color: $almost-white;
+    border: 1px solid $almost-black;
+
+    &:hover {
+      background: $almost-white;
+      color: $almost-black;
+      transition: all 0.5s ease;
+    }
+
+  }
+}

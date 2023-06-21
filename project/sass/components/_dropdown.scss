@@ -1,0 +1,50 @@
+@import "../abstracts";
+
+
+.dropdown-menu {
+  display: none;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  column-gap: 10px;
+  border-radius: 12px;
+  border: none;
+  padding: 20px 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+
+  .dropdown-item {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    color: $medium-gray !important;
+
+  }
+}
+
+.dropdown-list {
+  right: 30px;
+  left: unset;
+}
+
+.fa-solid {
+  transform: rotate(0deg);
+  transition: transform 0.5s ease;
+}
+
+.rotate {
+  background-image: url("../../../images/icon-arrow-down.svg");
+  transform: rotate(0deg);
+  transition: transform 0.5s ease;
+}
+
+.show {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+
+   .rotate  {
+     background-image: url("../../../images/icon-arrow-up.svg");
+     transform: rotate(180deg);
+    transition: transform 0.5s ease;
+  }
+}
+
